@@ -1,12 +1,12 @@
 /*PEdir con readline un numero y añade por cada fila un asterisco:
-ejemplo:4
-//HACER A LA REVERSA
+// ejemplo:4
+// HACER A LA REVERSA
 
-*
-**
-***
-****
-*/
+// *
+// **
+// ***
+// ****
+// */
 let numero =3;
 
 for(j=0;j<numero;j++){
