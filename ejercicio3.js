@@ -8,15 +8,15 @@ let numero1 = Number(readline.question("dime el primer numero"));
 let numero2 = Number(readline.question("dime un  segundo numero"));
 let numero3 = Number(readline.question("dime un tercer numero"));
 // falta cuando son dos numeros iguales
-if (numero1>=numero2 && numero1>=numero3) {
+if (numero1>numero2 && numero1>numero3) {
     console.log(numero1);
     
-} else if (numero2>=numero1 && numero2>=numero3) {
+} else if (numero2>numero3) {
     console.log(numero2);
 //se pone mayor-igual para que empiece leyendo y aunque sea igual enseñe el numero que sea mas grande    
-} else if (numero3>=numero1 && numero3>=numero2) {
+} else if (numero3>numero1) {
     console.log(numero3);
 
-} else if (numero1==numero2 || numero2==numero3 || numero1==numero3){
+} else if (numero1==numero2 && numero2==numero3){
     console.log("los numeros son iguales");
 }

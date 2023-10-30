@@ -60,7 +60,7 @@ const productos= [
         nombre: "puslera",
         stock: 2,
         categoria: "deporte",
-        precio: 4,
+        precio: 2000,
         valoracion: 4.5
 
     },
@@ -85,11 +85,12 @@ function caro2(array,elemento){
  //DUDA como revisa cual es el mayor teniendo solo la referencia del primero   
     for(i=1;i<productos.length;i++){
         if(productos[i].precio > mayor) {
-            posicion=i
+              mayor=productos[i].precio;
+            posicion=i;
           }
         }
-        return {nombre: productos[posicion].nombre , stock: productos[posicion].stock}
-    }
+        return {nombre: productos[posicion].nombre , stock: productos[posicion].stock};
+}
 //LECTURA: el bucle empieza en 1 porque hemos declarado antes el primer elemento(nos ahorramos un paso);
 //longitud del array, sumamos uno  y SI el precio es mayor que el anterior
 //IMPORTANTE a la variable posicion vacia le damos el valor de I
