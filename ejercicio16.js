@@ -10,7 +10,13 @@ let numero = 1
 while (numero < 10) {
 //sacame por consola:
   console.log("el cuadrado de "+numero+" es "+(numero*numero)) ;
-  numero++; 
+numero++; 
 }
 //aqui se suma 1 en contador++ y sube de nuevo al bucle hasta que llega a la condicion.
 //hacer en casa con do while
+let array=[];
+for(let i=0;i<10;i++){
+ array=i*i;
+ console.log(array);
+}
+
