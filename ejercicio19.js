@@ -4,7 +4,7 @@
  *  que nos calcule la media aritmetica de estos sin contar el -1. Suponemos que
  *  el usuario no insertará numeros negativos.
  */
-let array=[-1,2,6,4];
+let array=[2,6,4,-1];
 let suma=1;
 let longitud=0;
 //La suma empieza en 1, ya que la ultima vuelta le resta uno
@@ -16,6 +16,7 @@ for(i=0;i<array.length;i++){
      break;
    }  
 }
+//0 entre c0
 longitud=i;
 //la suma partida la longitud del array-1
 let media=suma/longitud;

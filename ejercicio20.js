@@ -13,7 +13,7 @@ let readline = require("readline-sync");
  */
 
 let clave=readline.question("Clave :");
-let array=[1,2,3,4,5,6,"eureka",7,8];
+
 //for que de maximo dos vueltas que son las 3 oportunidades de poner correctamente la contraseña
 for(i=0 ; i<2 ; i++){
 //si clave es igual a contraseña se sale.
@@ -21,7 +21,7 @@ for(i=0 ; i<2 ; i++){
       console.log("Contraseña correcta, bienvenido");
       break;
 //si clave es diferente a contraseña: contraseña incorrecta
-    } else if (array[i]!="eureka") {
+    } else {
       console.log("Contraseña incorrecta, intentelo de nuevo");   
     } 
     clave=readline.question("Clave :");

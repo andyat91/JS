@@ -11,8 +11,8 @@ let readline = require("readline-sync");
 
 traduccion=si ponemos un numero nos tiene que devolver la suma de los siguientes  numeros pares *N
 */
-let N1=Number(readline.question("introduce un numero"));
-//let N=4
+//let N1=Number(readline.question("introduce un numero"));
+let N1=11;
 let suma=0;
 //contador empieza en 1 y es igual o menor al numero que ponemos
 for(i=1;i<=N1;i++){

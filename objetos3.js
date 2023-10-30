@@ -30,7 +30,8 @@ let array=[];
 //hacemos un for para que recorra todo el array y le decimos que cuando salga
 //una categoria igual a tipo que la vaya metiendo en el array nuevo
 //hacemos return fuera del for de CADA producto al completo, no solo la categoria.
-function cat(productos){
+function cat(productos,categoria){
+    let array=[];
 for(i=0;i<productos.length;i++) {
     if(productos[i].categoria==tipo) {
         array.push(productos[i]);
