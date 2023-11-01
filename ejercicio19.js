@@ -16,9 +16,12 @@ for(i=0;i<array.length;i++){
      break;
    }  
 }
-//0 entre c0
+//0 entre 0
 longitud=i;
-//la suma partida la longitud del array-1
+if(suma==0){
+    return suma=0;
+} 
 let media=suma/longitud;
+
 //Revisar en clase porque no entiendo porque no me da 0.
 console.log(media);

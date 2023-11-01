@@ -7,27 +7,35 @@ let readline = require("readline-sync");
  *  nos muestre el máximo, el mínimo y la media de todos
  *  ellos. Piensa como debemos inicializar las variables.
  */
-let array=[0,2,8,8];
-let suma=0;
+let array=[4,2,0,4];
+let suma=array[0];
 let max=array[0];
 let min=array[0];
-let longitud=1;
+let longitud=0;
 
-for(j=0;j<array.length;j++){
-    
-    longitud=j;
-    if(array[j]==0){
-        break;
-    }
-    suma=suma+array[j];
-}
-//SIN RESOLVER. No se sacar el max hasta llegar al cero. pedir para revisar en clase.
-for(i=0;i<array.length;i++){
+for(i=1 ; i<array.length ; i++){
+    suma = suma+array[i];
+    longitud=i;
+//IMPORTANTE: si el numero que va recorriendo el array es diferente a 0, entra.
+if(array[i]!=0){
     if(array[i]>max){
+//ve guardandome el max del array
         max=array[i];
-    } else if( array[i]==0){
-        break;
+        if(array[i]==0){
+            break;
+        }
+    } else if (array[i]<min && array[i]>0){
+//ve guardandome el minimo del array
+        min=array[i];
+        if(array[i]==0){
+            break;
+        }
     }
+//si encuentras un cero CORTA
+} else { 
+    break;
+}
 }
 console.log(suma/longitud);
 console.log(max);
+console.log(min);
