@@ -1,3 +1,7 @@
+let readline = require("readline-sync");
+//esto es para llamar a una librería;
+
+
 /**
  *  Ejercicio 24
  *  Calcular las calificaciones de un grupo de alumnos. La nota final de cada alumno
@@ -12,4 +16,29 @@
  *
  *  Si todo es correcto el algorimo debera imprimir 'NombreAlumno tu nota final es de NotaFinal sobre 10'
  */
+let notafinal=0;
+let alumno=readline.question("introduzca su nombre :")
+//let alumno=0;
+//preguntar por while y string
+//porque cuando pongo la primera vez mal el nombre la segunda me da mal tmb aunque lo ponga bien
+while(alumno== "") {
+    alumno=readline.question("Nombre mal introducido pruebe de nuevo :");
+}
+do {
+
+
+let practica=Number(readline.question("Introduzca nota en practicas :"));
+let problema=Number(readline.question("introduzca nota en problemas :"));
+let teorica=Number(readline.question("introduzca nota en teorica :"));
+
+
+notafinal=((practica/100)*10)+((problema/100)*50)+((teorica/100)*40);
+//no entra en el if
+if(notafinal<0 || notafinal>10 || isNaN(notafinal)){
+    console.log("has introducido mal la nota, intentalo de nuevo");
+} 
+} while (notafinal<0 || notafinal>10 || isNaN(notafinal));
+
+console.log("Nombre alumno :"+alumno+", Su nota final es :"+notafinal);
+
 
