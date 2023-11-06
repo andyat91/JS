@@ -54,9 +54,25 @@ for(i=1;i<result.length;i++){
     }
    
 }
-console.log(max);
+//console.log(max);
 
-
+});
+// EJERCICIO 3: Ordenar por apellido descendente
+connection.query("select * from empleados", function(error,result, fields) {
+    if (error) {
+        return console.error("error"+error.message);
+    }
+    
+for(j=0;j<result.length;j++) {
+    for(i=0;i<result.length-1;i++) {
+        if(result[i+1].apellidos>result[i].apellidos){
+            let aux= result[i+1].apellidos;
+            result[i+1].apellidos=result[i].apellidos;
+            result[i].apellidos=aux;
+        }
+    }
+}
+console.log(result);
 
 });
 //cerrar conexion
