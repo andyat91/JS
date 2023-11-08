@@ -52,7 +52,7 @@ let filas2=4;
 let linea2="";
 for(i=1 ; i<=filas2 ; i++) {
     for(j=1 ; j<=i ;j++){
-//DUDA: Se vuelve a quedar vacia la variable linea a partir de la segunda linea???
+
 //en este caso se va sumando i, entonces va concatenando i+i en cada salto de linea
         linea2 = linea2 + i;
     }
@@ -71,7 +71,7 @@ let linea3 = "";
 let inicio = 1;
 for(i=1 ; i<=filas3 ; i++) {
   for(j=1 ; j<=i ; j++) {
-//DUDA 
+
     linea3 = linea3 + inicio;
     inicio++;
   }
