@@ -95,7 +95,7 @@ function caro2(array,elemento){
 //longitud del array, sumamos uno  y SI el precio es mayor que el anterior
 //IMPORTANTE a la variable posicion vacia le damos el valor de I
 //que luego utilizaremos para devolvernos la posicion del prodcuto en este caso mas caro.
-//DUDA
+
     
 
 console.log(caro2(productos));
