@@ -8,3 +8,5 @@ num1=2;
 num2=3;
 num3=4;
 
+//se trata de que metan 3 numeros y yo mire cual de los 3 es mayor: con un if
+//y que haga el return modo objeto {1:num1 , 2:num2 , 3:num3}

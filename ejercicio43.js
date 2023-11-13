@@ -16,21 +16,7 @@ let min=15;
 let seg=39;
 let relojhora=0;
 //Pedir ayuda y revisar en clase
-    for(i=hora ; i<=23 ; i++) {
-
-
-
-        for(j=min ; j<=59 ; j++) {
-
-            if(j>min) {
-                k=0;
-            }
-
-            for(k=seg ; k<=59 ; k++) {
-                
-            }
-        }
-    }
+ //hacer con bucle while con if dentro donde en cada if se vaya sumando un minuto y en seg igual y en horas igual
 
 
 
