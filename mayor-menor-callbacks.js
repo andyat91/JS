@@ -1,4 +1,4 @@
-let listado = [ 1, 5, 12, 8, 7, 23, 8, 2 ];
+let listado = [-38,-22,-42,-1,-110];
 
 function esMayor(a, b) {
     return a > b;
@@ -32,3 +32,6 @@ console.log(procesar(listado, esMayor));
 // muestra el menor
 //                  (elementos, callbacks)
 console.log(procesar(listado, esMenor));
+
+
+module.exports = { procesar, esMayor, esMenor };

@@ -56,3 +56,6 @@ comprobarPelotas(jugadasUno)
 comprobarPelotas(jugadasDos)
 .then(mostrar)
 .catch(mostrar);
+
+
+module.exports =  { comprobarPelotas }

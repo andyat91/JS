@@ -4,5 +4,11 @@
     "mongodb": "^6.3.0",
     "mysql2": "^3.6.2",
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

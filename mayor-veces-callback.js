@@ -46,3 +46,5 @@ if(suma!=resta) {
 
 console.log(contar(secuenciaUno)); // debe mostrar "suma"
 console.log(contar(secuenciaDos)); // debe mostrar "resta"
+
+module.exports = { suma , resta , contar };

@@ -126,39 +126,39 @@ main()
 //          });
 //  }
 
-// async function migrarEmpleadosclientes() {
+async function migrarEmpleadosclientes() {
 
-//     const collection =mongoDataBase.collection("empleadosclientes");
-//     //Extract
-//     const  empleadosclientes = [];
-//      connection.query(
-//         `SELECT empleadosclientes.nombre,empleadosclientes.apellidos,usuarios.email,clientes.razon_social,empleadosclientes.DNI,empleadosclientes.telefono AS telefonoempleados FROM empleadosclientes JOIN usuarios ON empleadosclientes.usuarioid = usuarios.id 
-//         JOIN clientes ON empleadosclientes.clientesid = clientes.id`,
-//          async function(error,result,fields) {
-//             if (error) {
-//                 return console.error(`error: ${error.message}`);
-//               } 
+    const collection =mongoDataBase.collection("empleadosclientes");
+    //Extract
+    const  empleadosclientes = [];
+     connection.query(
+        `SELECT empleadosclientes.nombre,empleadosclientes.apellidos,usuarios.email,clientes.razon_social,empleadosclientes.DNI,empleadosclientes.telefono AS telefonoempleados FROM empleadosclientes JOIN usuarios ON empleadosclientes.usuarioid = usuarios.id 
+        JOIN clientes ON empleadosclientes.clientesid = clientes.id`,
+         async function(error,result,fields) {
+            if (error) {
+                return console.error(`error: ${error.message}`);
+              } 
 
-//               for(i=0 ; i<result.length ; i++) {
+              for(i=0 ; i<result.length ; i++) {
 
-//                 empleadosclientes.push({
-//                     nombre: result[i].nombre,
-//                     apellidos: result[i].apellidos,
-//                     usuarioid:{
-//                         email: result[i].email},
-//                     cliente:{
-//                         razon_social: result[i].razon_social},
-//                     DNI: result[i].DNI,
-//                     telefono: result[i].telefonoempleados
-//                 })
-//               }
-//               console.log(empleadosclientes);
+                empleadosclientes.push({
+                    nombre: result[i].nombre,
+                    apellidos: result[i].apellidos,
+                    usuarioid:{
+                        email: result[i].email},
+                    cliente:{
+                        razon_social: result[i].razon_social},
+                    DNI: result[i].DNI,
+                    telefono: result[i].telefonoempleados
+                })
+              }
+              console.log(empleadosclientes);
               
-//         await collection.insertMany(empleadosclientes);
+        await collection.insertMany(empleadosclientes);
 
-//         });
+        });
 
-// }
+}
 
 // async function migrarEventos() {
 

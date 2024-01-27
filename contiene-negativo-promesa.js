@@ -40,3 +40,5 @@ comprobarNegativo(listado)
 comprobarNegativo(listadoConNegativo)
     .then(mostrar)
     .catch(mostrar);
+
+    module.exports = { comprobarNegativo }
