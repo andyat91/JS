@@ -16,23 +16,23 @@ const { comprobarNegativo } = require("../contiene-negativo-promesa.js")
 test('promesa que recibe [-1,-2,-5] y resuelve -1',() => {
     expect(comprobarNegativo([-1,-2,-5])).rejects.toEqual(-1);
 });
-//--------------------------------------------------------------------------
-//Test2  Error porque hay letras en vez de numeros
+
+//Test2  
 test('promesa que recibe ["a","b","c"] y resuelve ¿?',() => {
-    expect(comprobarNegativo(["a","b","c"])).toEqual({});
+    expect(comprobarNegativo(["a","b","c"])).resolves.toStrictEqual(["a","b","c"]);
 });
 
-//Test3  Error porque devuelve un array vacio
+//Test3  
 test('promesa que recibe [0,0,0] y resuelve [0,0,0]',() => {
-    expect(comprobarNegativo([0,0,0])).toEqual(0);
+    expect(comprobarNegativo([0,0,0])).resolves.toStrictEqual([0,0,0]);
 });
-//--------------------------------------------------------------------------
+
 //Test4  
 test('promesa que recibe [-1,-1,-1] y resuelve -1',() => {
     expect(comprobarNegativo([-1,-1,-1])).rejects.toEqual(-1);
 });
 
-//Test5  Error porque devuelve un array vacio
+//Test5  
 test('promesa que recibe [undefined,2,5] y resuelve {}',() => {
-    expect(comprobarNegativo([undefined,2,5])).toEqual([{}]);
+    expect(comprobarNegativo([undefined,2,5])).resolves.toStrictEqual([undefined,2,5]);
 });

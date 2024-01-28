@@ -12,7 +12,7 @@
  */
 //nos dice el numero de pelota las veces que se ha utilizado cada una de ellas 
 const jugadasUno = [1, 1, 2, 3, 4, 1, 1, 2, 2, 3, 3, 4, 4, 1, 1, 2];//1=6 2=4 3=3 4=3
-const jugadasDos = [1, 3, 2, 3, 4, 1, 1, 2, 2, 3, 3, 4, 4, 1, 4, 2];
+const jugadasDos = [4,5,5,5,4];
 
 
 function comprobarPelotas(jugadas) {
@@ -22,7 +22,7 @@ function comprobarPelotas(jugadas) {
     let suma3=0;
     let suma4=0;
 //ve sumandome las cantidades de todos los elementos que hay en el array
-        for(i=0;i<jugadas.length;i++){
+        for(let i=0;i<jugadas.length;i++){
             if(jugadas[i]==1){
                 suma1 = suma1+1;
             }else if (jugadas[i]==2) {
@@ -58,4 +58,4 @@ comprobarPelotas(jugadasDos)
 .catch(mostrar);
 
 
-module.exports =  { comprobarPelotas }
+module.exports =  { comprobarPelotas , mostrar }
